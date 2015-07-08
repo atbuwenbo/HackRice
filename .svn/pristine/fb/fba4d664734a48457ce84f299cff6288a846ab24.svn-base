@@ -1,0 +1,292 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camera2">
+	
+ 
+
+	<RelativeLayout
+	    android:id="@+id/photo_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_above="@+id/bottom"
+	   >
+		<RelativeLayout
+	    	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@android:color/transparent"
+    		android:visibility="gone"
+    		android:id="@+id/navigation">
+    	<Button 
+    		android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:background="@drawable/rechoose"
+    		android:id="@+id/rechoose"/>
+    	
+    	<Button 
+    	    android:layout_width="40dp"
+    		android:layout_height="40dp"
+    		android:background="@drawable/meme"
+    		android:layout_alignParentRight="true"
+    		android:id="@+id/meme"/>
+	 	</RelativeLayout>
+	 	
+		<RelativeLayout
+		    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@+id/navigation">
+    		
+		    <ImageButton
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/photo_choice_btn" />
+	    
+		    <ImageView
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/camera"
+		        android:visibility="gone"
+		        android:id="@+id/photo_view"/>
+
+			<Button
+			    android:id="@+id/compare"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_alignParentBottom="true"
+			    android:layout_alignParentRight="true"
+			    android:padding="10dp"
+			    android:background="@drawable/compare" />
+	    </RelativeLayout>
+	    <RelativeLayout
+	 	    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_below="@+id/navigation"
+    		android:background="#99000000"
+    		android:visibility="gone"
+    		android:gravity="center"
+    		android:id="@+id/pb_layout">
+	 	     <TextView
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:layout_centerVertical="true"
+	 	        android:layout_toRightOf="@+id/img_pb"
+	 	        android:textSize="20sp"
+	 	        android:textColor="#ffffff"
+	 	        android:text="@string/img_pb" />
+
+	 	    <ProgressBar
+	 	        android:id="@+id/img_pb"
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:layout_alignParentLeft="true"
+	 	        android:layout_centerVertical="true"
+	 	        style="?android:attr/progressBarStyleLarge"
+	 	        android:layout_marginLeft="36dp" />
+	 	</RelativeLayout>
+	</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:orientation="horizontal"
+    	android:id="@+id/bottom">
+        
+ 
+	<AbsoluteLayout
+	    android:layout_width="870dp"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#65000000"
+    	android:padding="10dp"
+    	android:id="@+id/styles"
+    	>
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:orientation="vertical"
+    		android:background="@drawable/shape"
+    		android:id="@+id/style1">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/style1"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style1"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="70dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style2">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/style2"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style2"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="140dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style3">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/style3"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style3"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="210dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style4">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/style4"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style4"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="280dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style5">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/style5"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style5"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="350dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style6">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/rechoose"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style1"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="420dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style7">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/rechoose"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style1"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="490dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style8">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/rechoose"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style1"/>
+	        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_x="560dp"
+    		android:orientation="vertical"
+    		android:id="@+id/style9">
+    		
+	        <ImageView
+	            android:layout_width="45dp"
+    			android:layout_height="45dp"
+    			android:src="@drawable/rechoose"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/style1"/>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	          	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+	        	android:layout_x="610dp">
+	    <TextView
+	        	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="12sp"
+    			android:text="@string/bug"
+	        />
+	    </LinearLayout>
+	</AbsoluteLayout>
+ </LinearLayout>
+</RelativeLayout>

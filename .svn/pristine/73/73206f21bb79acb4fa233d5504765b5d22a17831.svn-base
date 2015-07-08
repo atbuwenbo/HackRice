@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cuter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_source_sel">SourceSelActivity</string>
+    <string name="click_choose_photo">Click me to choose a photo~</string>
+    <string name="style1">Ink Painting</string>
+    <string name="style2">Batman</string>
+    <string name="style3">Transformer</string>
+    <string name="style4">Hello Kitty</string>
+    <string name="style5">Che Guevara</string>
+    <string name="bug">Hey, you have dragged too much</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="title_activity_meme">MemeActivity</string>
+    <string name="meme_confirm"> Confirm Meme!</string>
+    <string name="meme_cancel"> Cancel</string>
+    <string name="top_meme">Top meme text</string>
+    <string name="bottom_meme">Bottom meme text</string>
+	<string name="img_pb">Processing, please wait...</string>
+</resources>
